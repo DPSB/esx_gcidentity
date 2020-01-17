@@ -1,6 +1,9 @@
--- resource_manifest_version '77731fab-63ca-442c-a67b-abc70f28dfa5'
+fx_version 'adamant'
+
+game 'gta5'
 
 ui_page 'html/ui.html'
+
 files {
 	'html/ui.html',
 	'html/style.css',
@@ -10,15 +13,9 @@ files {
 	'html/cursor.png'
 }
 
-client_script {
-	"client.lua"
-}
-
+client_script 'client.lua'
 
 server_scripts {
-
   '@mysql-async/lib/MySQL.lua',
   'server.lua'
-
 }
-
